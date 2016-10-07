@@ -1,0 +1,84 @@
+=pod
+
+=head1 NAME
+
+Starch::Store::Catalyst::Plugin::Session - Starch storage backend using
+Catalyst::Plugin::Session stores.
+
+=head1 SYNOPSIS
+
+    my $starch = Starch->new(
+        store => {
+            class => '::Catalyst::Plugin::Session',
+            store_class => 'Catalyst::Plugin::Session::Store::File',
+            session_config => {
+                storage => '/tmp/session',
+            },
+        },
+    );
+
+=head1 DESCRIPTION
+
+This L<Starch> store uses L<Catalyst::Plugin::Session> stores
+to set and get state data.
+
+The reason this module exists is to make the migration from
+the Catalyst session plugin to Starch as painless as possible.
+
+=head1 REQUIRED ARGUMENTS
+
+=head2 store_class
+
+The full class name for the L<Catalyst::Plugin::Session::Store> you
+wish to use.
+
+=head1 OPTIONAL ARGUMENTS
+
+=head2 session_config
+
+The configuration of the session plugin.
+
+=head1 ATTRIBUTES
+
+=head2 store
+
+This is the L<Catalyst::Plugin::Session::Store> object build from the
+L</store_class> and with a fake Catalyst superclass to make everything
+work.
+
+=head2 set
+
+Set L<Starch::Store/set>.  Calls C<store_session_data> on L</store>.
+
+=head2 get
+
+Set L<Starch::Store/get>.  Calls C<get_session_data> on L</store>.
+
+=head2 remove
+
+Set L<Starch::Store/remove>.  Calls C<delete_session_data> on L</store>.
+
+=head1 SUPPORT
+
+Please submit bugs and feature requests to the
+Starch-Store-Catalyst-Plugin-Session GitHub issue tracker:
+
+L<https://github.com/bluefeet/Starch-Store-Calatlyst-Plugin-Session/issues>
+
+=head1 AUTHOR
+
+Aran Clary Deltac <bluefeetE<64>gmail.com>
+
+=head1 ACKNOWLEDGEMENTS
+
+Thanks to L<ZipRecruiter|https://www.ziprecruiter.com/>
+for encouraging their employees to contribute back to the open
+source ecosystem.  Without their dedication to quality software
+development this distribution would not exist.
+
+=head1 LICENSE
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+
+=cut
