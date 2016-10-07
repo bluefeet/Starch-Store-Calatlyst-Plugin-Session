@@ -95,7 +95,7 @@ has session_config => (
 
 =head2 store
 
-This is the L<Catalyst::Plugin::Session::Store> object build from the
+This is the L<Catalyst::Plugin::Session::Store> object built from the
 L</store_class> and with a fake Catalyst superclass to make everything
 work.
 
