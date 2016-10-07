@@ -2,5 +2,7 @@ Revision history for Perl extension Starch::Store::Catalyst::Plugin::Session.
 
 {{$NEXT}}
 
+0.01 2016-10-07
+
  - First version.
 
