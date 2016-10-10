@@ -138,17 +138,19 @@ sub _build_store {
     return $store;
 }
 
+=head1 METHODS
+
 =head2 set
 
-Set L<Starch::Store/set>.  Calls C<store_session_data> on L</store>.
+See L<Starch::Store/set>.  Calls C<store_session_data> on L</store>.
 
 =head2 get
 
-Set L<Starch::Store/get>.  Calls C<get_session_data> on L</store>.
+See L<Starch::Store/get>.  Calls C<get_session_data> on L</store>.
 
 =head2 remove
 
-Set L<Starch::Store/remove>.  Calls C<delete_session_data> on L</store>.
+See L<Starch::Store/remove>.  Calls C<delete_session_data> on L</store>.
 
 =cut
 
