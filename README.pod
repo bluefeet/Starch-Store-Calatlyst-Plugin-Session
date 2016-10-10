@@ -10,7 +10,7 @@ Catalyst::Plugin::Session stores.
     my $starch = Starch->new(
         store => {
             class => '::Catalyst::Plugin::Session',
-            store_class => 'Catalyst::Plugin::Session::Store::File',
+            store_class => '::File',
             session_config => {
                 storage => '/tmp/session',
             },
@@ -31,6 +31,11 @@ the Catalyst session plugin to Starch as painless as possible.
 
 The full class name for the L<Catalyst::Plugin::Session::Store> you
 wish to use.
+
+If the store class starts with C<::> then it will be considered
+relative to C<Catalyst::Plugin::Session::Store>.  For example, if
+you set this to C<::File> then it will be internally translated to
+C<Catalyst::Plugin::Session::Store::File>.
 
 =head1 OPTIONAL ARGUMENTS
 
