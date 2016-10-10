@@ -159,7 +159,7 @@ sub set {
 
     local $Carp::Internal{ (__PACKAGE__) } = 1;
 
-    $self->store->store_session_data( $id, $data );
+    $self->store->store_session_data( "session:$id", $data );
 
     return;
 }
@@ -169,7 +169,7 @@ sub get {
 
     local $Carp::Internal{ (__PACKAGE__) } = 1;
 
-    return $self->store->get_session_data( $id );
+    return $self->store->get_session_data( "session:$id" );
 }
 
 sub remove {
@@ -177,7 +177,7 @@ sub remove {
 
     local $Carp::Internal{ (__PACKAGE__) } = 1;
 
-    $self->store->delete_session_data( $id );
+    $self->store->delete_session_data( "session:$id" );
 
     return;
 }

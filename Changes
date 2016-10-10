@@ -2,6 +2,9 @@ Revision history for Perl extension Starch::Store::Catalyst::Plugin::Session.
 
 {{$NEXT}}
 
+ - Prepend "session:" to the keys so that we're backwards compatible
+   with existing stores.
+
 0.02 2016-10-09
 
  - Support the debug() and log() methods in our fake Catalyst class.
