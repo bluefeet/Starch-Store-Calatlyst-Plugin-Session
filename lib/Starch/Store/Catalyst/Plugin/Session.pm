@@ -54,12 +54,23 @@ after BUILD => sub{
         Starch::FakeCatalystContext;
 
     use Moose;
+    extends 'Catalyst::Component';
+    use Class::C3::Adopt::NEXT;
+    use Log::Any qw($log);
 
     has config => ( is=>'ro' );
 
     sub _session_plugin_config {
         return $_[0]->config->{session};
     }
+
+    sub setup_session {
+        $_[0]->maybe::next::method();
+    }
+
+    sub debug { 0 }
+
+    sub log { $log }
 }
 
 =head1 REQUIRED ARGUMENTS
@@ -115,12 +126,16 @@ sub _build_store {
         ],
     );
 
-    return $class->new_object(
+    my $store = $class->new_object(
         config => {
             session => $self->session_config(),
             'Plugin::Session' => $self->session_config(),
         },
     );
+
+    $store->setup_session();
+
+    return $store;
 }
 
 =head2 set

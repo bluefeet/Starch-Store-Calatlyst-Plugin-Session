@@ -4,6 +4,7 @@ requires 'strictures'       => 2.000000;
 requires 'namespace::clean' => 0.24;
 requires 'Moo'              => 2.000000;
 requires 'Type::Tiny'       => 1.000005;
+requires 'Log::Any'         => 1.03;
 
 on test => sub {
     requires 'Test2::Bundle::Extended' => '0.000051';
