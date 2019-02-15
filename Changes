@@ -1,8 +1,9 @@
-Revision history for Perl extension Starch::Store::Catalyst::Plugin::Session.
+Revision history for Perl extension Starch-Store-Catalyst-Plugin-Session.
 
 {{$NEXT}}
 
  - Support relative package names in the store_class argument.
+ - Migrate build tooling from Dist::Zilla to Minilla.
 
 0.03 2016-10-09
 

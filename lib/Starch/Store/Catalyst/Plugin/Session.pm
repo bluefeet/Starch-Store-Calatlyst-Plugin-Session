@@ -1,5 +1,7 @@
 package Starch::Store::Catalyst::Plugin::Session;
 
+$Starch::Store::Catalyst::Plugin::Session::VERSION = '0.03';
+
 =head1 NAME
 
 Starch::Store::Catalyst::Plugin::Session - Starch storage backend using
