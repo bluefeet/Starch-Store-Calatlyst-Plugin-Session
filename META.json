@@ -42,19 +42,19 @@
       },
       "runtime" : {
          "requires" : {
-            "Catalyst::Plugin::Session" : "0.4",
+            "Catalyst::Plugin::Session" : "0.40",
             "Log::Any" : "1.03",
-            "Moo" : "2",
-            "Starch" : "0.05",
+            "Moo" : "2.000000",
+            "Starch" : "0.10",
             "Type::Tiny" : "1.000005",
             "namespace::clean" : "0.24",
-            "strictures" : "2"
+            "strictures" : "2.000000"
          }
       },
       "test" : {
          "requires" : {
             "Catalyst::Plugin::Session::Store::File" : "0.18",
-            "Test2::Bundle::Extended" : "0.000051"
+            "Test2::V0" : "0.000094"
          }
       }
    },
