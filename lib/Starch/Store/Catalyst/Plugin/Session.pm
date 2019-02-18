@@ -1,6 +1,6 @@
 package Starch::Store::Catalyst::Plugin::Session;
 
-$Starch::Store::Catalyst::Plugin::Session::VERSION = '0.03';
+$Starch::Store::Catalyst::Plugin::Session::VERSION = '0.04';
 
 =head1 NAME
 
