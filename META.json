@@ -61,19 +61,19 @@
    "release_status" : "unstable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://github.com/bluefeet/Starch-Store-Catalyst-Plugin-Session/issues"
+         "web" : "https://github.com/bluefeet/Starch-Store-Calatlyst-Plugin-Session/issues"
       },
-      "homepage" : "https://github.com/bluefeet/Starch-Store-Catalyst-Plugin-Session",
+      "homepage" : "https://github.com/bluefeet/Starch-Store-Calatlyst-Plugin-Session",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/bluefeet/Starch-Store-Catalyst-Plugin-Session.git",
-         "web" : "https://github.com/bluefeet/Starch-Store-Catalyst-Plugin-Session"
+         "url" : "git://github.com/bluefeet/Starch-Store-Calatlyst-Plugin-Session.git",
+         "web" : "https://github.com/bluefeet/Starch-Store-Calatlyst-Plugin-Session"
       }
    },
    "version" : "0.03",
    "x_contributors" : [
       "Aran Deltac <aran@ziprecruiter.com>"
    ],
-   "x_serialization_backend" : "JSON::PP version 2.27400_02",
+   "x_serialization_backend" : "JSON::PP version 2.27300",
    "x_static_install" : 1
 }
