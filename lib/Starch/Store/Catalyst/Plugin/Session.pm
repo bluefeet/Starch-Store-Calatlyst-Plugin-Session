@@ -1,5 +1,6 @@
 package Starch::Store::Catalyst::Plugin::Session;
-
+use 5.008001;
+use strictures 2;
 our $VERSION = '0.04';
 
 =head1 NAME
@@ -36,7 +37,6 @@ use Types::Common::String -types;
 use Starch::Util qw( load_prefixed_module );
 
 use Moo;
-use strictures 2;
 use namespace::clean;
 
 with qw(
@@ -53,7 +53,7 @@ after BUILD => sub{
 };
 
 {
-    package # NO CPAN INDEX
+    package # NO INDEX
         Starch::FakeCatalystContext;
 
     use Moose;
