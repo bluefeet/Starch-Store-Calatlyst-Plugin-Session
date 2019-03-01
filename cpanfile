@@ -2,6 +2,7 @@ requires 'perl' => '5.008001';
 requires 'strictures' => '2.000000';
 requires 'namespace::clean' => '0.24';
 
+requires 'Catalyst::Component';
 requires 'Catalyst::Plugin::Session' => '0.40';
 requires 'Catalyst::Plugin::Session::Store';
 requires 'Class::C3::Adopt::NEXT' => '0.10';
