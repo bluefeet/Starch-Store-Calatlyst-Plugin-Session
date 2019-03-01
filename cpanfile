@@ -1,5 +1,5 @@
 requires 'perl' => '5.008001';
-requires 'Starch' => '0.10';
+requires 'Starch' => '0.11';
 requires 'Catalyst::Plugin::Session' => '0.40';
 requires 'strictures' => '2.000000';
 requires 'namespace::clean' => '0.24';

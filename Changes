@@ -2,6 +2,7 @@ Revision history for Perl extension Starch-Store-Catalyst-Plugin-Session.
 
 {{$NEXT}}
 
+ - Remove Carp::Internal calls which are no longer necessary.
  - Require perl 5.8.1.
  - Simplify VERSION declarations.
 

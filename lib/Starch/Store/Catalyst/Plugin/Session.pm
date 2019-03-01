@@ -170,8 +170,6 @@ See L<Starch::Store/remove>.  Calls C<delete_session_data> on L</store>.
 sub set {
     my ($self, $id, $namespace, $data, $expires) = @_;
 
-    local $Carp::Internal{ (__PACKAGE__) } = 1;
-
     $self->store->store_session_data( "session:$id", $data );
 
     return;
@@ -180,15 +178,11 @@ sub set {
 sub get {
     my ($self, $id, $namespace) = @_;
 
-    local $Carp::Internal{ (__PACKAGE__) } = 1;
-
     return $self->store->get_session_data( "session:$id" );
 }
 
 sub remove {
     my ($self, $id, $namespace) = @_;
-
-    local $Carp::Internal{ (__PACKAGE__) } = 1;
 
     $self->store->delete_session_data( "session:$id" );
 
