@@ -72,7 +72,7 @@ Starch-Store-Catalyst-Plugin-Session GitHub issue tracker:
 
 # AUTHORS
 
-Aran Clary Deltac <bluefeet@gmail.com>
+    Aran Clary Deltac <bluefeet@gmail.com>
 
 # ACKNOWLEDGEMENTS
 
